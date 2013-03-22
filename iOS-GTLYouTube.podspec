@@ -1,18 +1,18 @@
 #
-# iOS-YouTube
+# iOS-GTLYouTube
 # CocoaPods podspec
 #
 
 Pod::Spec.new do |s|
   s.platform     = :ios, '5.1'
-  s.name         = 'iOS-YouTube'
+  s.name         = 'iOS-GTLYouTube'
   s.version      = '0.0.1'
   s.author       = { 'bryn austin bellomy' => 'bryn.bellomy@gmail.com' }
   s.summary      = 'Auto-generated Google library for accessing YouTube\'s new JSON API.'
-  s.homepage     = 'http://github.com/brynbellomy/iOS-YouTube'
+  s.homepage     = 'http://github.com/brynbellomy/iOS-GTLYouTube'
   s.license      = { :type => 'WTFPL', :file => 'LICENSE.md' }
 
-  s.source       = { :git => 'https://github.com/brynbellomy/iOS-YouTube.git', :tag => "v#{s.version.to_s}" }
+  s.source       = { :git => 'https://github.com/brynbellomy/iOS-GTLYouTube.git', :tag => "v#{s.version.to_s}" }
 
   s.requires_arc = false
   # s.header_dir = ''
