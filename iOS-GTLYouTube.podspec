@@ -6,19 +6,18 @@
 Pod::Spec.new do |s|
   s.platform     = :ios, '5.1'
   s.name         = 'iOS-GTLYouTube'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.author       = { 'bryn austin bellomy' => 'bryn.bellomy@gmail.com' }
-  s.summary      = 'Auto-generated Google library for accessing YouTube\'s new JSON API.'
+  s.summary      = 'Auto-generated Google GTL library for accessing YouTube\'s new JSON API.'
   s.homepage     = 'http://github.com/brynbellomy/iOS-GTLYouTube'
   s.license      = { :type => 'WTFPL', :file => 'LICENSE.md' }
 
   s.source       = { :git => 'https://github.com/brynbellomy/iOS-GTLYouTube.git', :tag => "v#{s.version.to_s}" }
 
   s.requires_arc = false
-  # s.header_dir = ''
 
   s.public_header_files = %w[
-    Services/YouTube/Generated/GTLYouTubeConstants.h
+    Services/YouTube/Generated/*.h
     Utilities/GTLBase64.h
     Objects/GTLBatchQuery.h
     Objects/GTLBatchResult.h
@@ -48,7 +47,7 @@ Pod::Spec.new do |s|
     HTTPFetcher/GTMReadMonitorInputStream.h
   ]
 
-  s.source_files = '{Services/YouTube/Generated/{*.h,GTLYouTube_Sources.m},GTLDefines.h,HTTPFetcher/GTM{GatherInputStream,HTTPFetchHistory,HTTPFetcher,HTTPFetcherLogging,HTTPFetcherService,HTTPUploadFetcher,MIMEDocument,ReadMonitorInputStream}.{h,m},OAuth2/{GTMOAuth2Authentication.{h,m},GTMOAuth2SignIn.{h,m},Touch/GTMOAuth2ViewControllerTouch.{h,m}},Objects/GTL{BatchQuery,BatchResult,DateTime,ErrorObject,Object,Query,RuntimeCommon,Service,UploadParameters}.{h,m},Utilities/GTL{{Base64,Framework,JSONParser,Utilities}.{h,m},TargetNamespace.h}}'
+  s.source_files = FileList['./{Services/YouTube/Generated/{*.h,GTLYouTube_Sources.m,GTLYouTubeConstants.m},GTLDefines.h,HTTPFetcher/GTM{GatherInputStream,HTTPFetchHistory,HTTPFetcher,HTTPFetcherLogging,HTTPFetcherService,HTTPUploadFetcher,MIMEDocument,ReadMonitorInputStream}.{h,m},OAuth2/{GTMOAuth2Authentication.{h,m},GTMOAuth2SignIn.{h,m},Touch/GTMOAuth2ViewControllerTouch.{h,m}},Objects/GTL{BatchQuery,BatchResult,DateTime,ErrorObject,Object,Query,RuntimeCommon,Service,UploadParameters}.{h,m},Utilities/GTL{{Base64,Framework,JSONParser,Utilities}.{h,m},TargetNamespace.h}}']
 
 end
 
