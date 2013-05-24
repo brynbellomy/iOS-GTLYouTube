@@ -6,7 +6,7 @@
 Pod::Spec.new do |s|
   s.platform     = :ios, '5.1'
   s.name         = 'iOS-GTLYouTube'
-  s.version      = '0.0.2'
+  s.version      = '0.0.3'
   s.author       = { 'bryn austin bellomy' => 'bryn.bellomy@gmail.com' }
   s.summary      = 'Auto-generated Google GTL library for accessing YouTube\'s new JSON API.'
   s.homepage     = 'http://github.com/brynbellomy/iOS-GTLYouTube'
